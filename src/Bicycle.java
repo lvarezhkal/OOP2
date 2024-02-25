@@ -1,9 +1,7 @@
-public class Bicycle {
+public class Bicycle extends Vehinchil {
 
-    public String modelName;
-    public int wheelsCount;
-
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
+    public Bicycle (String modelName, int wheelCount){
+        super(modelName, wheelCount);
     }
+
 }

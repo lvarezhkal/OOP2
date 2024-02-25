@@ -1,13 +1,7 @@
-public class Car {
+public class Car extends MotorVehinchil {
 
-    public String modelName;
-    public int wheelsCount;
-
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
+    public Car (String modelName, int wheelCount){
+        super(modelName, wheelCount);
     }
 
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
-    }
 }
