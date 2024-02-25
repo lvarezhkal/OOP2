@@ -1,17 +1,15 @@
-public class Truck {
+public class Truck extends MotorVehinchil {
 
-    public String modelName;
-    public int wheelsCount;
-
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
-    }
-
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
+    public Truck (String modelName, int wheelCount){
+        super(modelName, wheelCount);
     }
 
     public void checkTrailer() {
         System.out.println("Проверяем прицеп");
+    }
+
+    public void check(){
+        super.check();
+        checkTrailer();
     }
 }
